@@ -32,6 +32,11 @@ Our appication will generate real-time and historical financial market data. Our
  - __Finanicals as Reported:__ a company's financials as reported including income statements, cash fow, and balance sheets.
    - `balance_sheet.csv`, `cash_flow.csv`, `income_statement.csv`
 
+### Issues and Limitations:
+ - Timeouts/Rate Limit – 30API Calls/sec
+ - Data Size & Storage
+ - Free endpoint options not having as much historical data
+
 
 ### Software Pre-requisites:
 ```
