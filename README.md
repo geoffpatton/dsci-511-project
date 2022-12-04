@@ -10,7 +10,7 @@ DSCI-511 - Final Project - Group 1
 - Rohit Bhattacharya - rb689@drexel.edu
 
 ### Project Summary
-Our appication will generate real-time and historical financial market data. Our data is gathered form [Finnhub](https://finnhub.io/docs/api). Below is a list of some of data we generate for analysis:
+Our appication will generate real-time and historical financial market data. Our data store is available to view in Google Drive: [Access Link](https://drive.google.com/drive/folders/1hgWRHwlC9thoPKd7-dRqEHTPGYv3LtUk?usp=sharing). It contains data from all S&P 500 companies. We use [Finnhub](https://finnhub.io/docs/api) as the source of our data. Below is a list of the data we generate for analysis:
  - __Basic Conpany Financials:__ Includes the basic financials of a company such as margin, P/E ratio, 52-week high/low etc.
    - `basic_company_financials.csv`
  - __Company Profile:__ General information on a company.
