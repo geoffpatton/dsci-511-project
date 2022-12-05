@@ -33,9 +33,14 @@ Our appication will generate real-time and historical financial market data. Our
    - `balance_sheet.csv`, `cash_flow.csv`, `income_statement.csv`
 
 ### Issues and Limitations:
- - Timeouts/Rate Limit – 30API Calls/sec
- - Data Size & Storage
- - Free endpoint options not having as much historical data
+ - Timeouts/Rate Limit – 300 API Calls/minute
+ - Our historical data is limited due to using a free version of finnhub
+
+
+## Running the Application
+We produced two different jupyter notebooks:
+1. `final_project_group_one.ipynb`: this notebook will generate the data locally into CSV files. In input is a hardcoded list of stock tickers.
+2. `google_drive/project.ipynb`: this notebook will generate the data directly into our shared [Google Drive](https://drive.google.com/drive/folders/1hgWRHwlC9thoPKd7-dRqEHTPGYv3LtUk?usp=sharing) location. This version will allow the user to input a stock symbol or could run against a hardcoded list of stock tickers.
 
 
 ### Software Pre-requisites:
@@ -44,7 +49,8 @@ pip install pandas
 pip install finnhub-python
 ```
 
-
 ### Running instructions 
-- Open the final_project_group_one jupyter notebook
+- Open the `final_project_group_one.ipynb` jupyter notebook
 - Press `Run All` Button
+  - This will run the notebook using the hardcoded set of tickers defined in the last code section of the notebook.
+
