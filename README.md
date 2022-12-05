@@ -25,22 +25,24 @@ Our appication will generate real-time and historical financial market data. Our
    - `insider_sentiment.csv`
  - __Insider Transactions:__ Insider transactions data sourced from Form 3,4,5, SEDI and relevant companies' filings.
    - `insider_transactions.csv`
- - __Social Media Sentiment:__ social sentiment for stocks on Reddit and Twitter.
+ - __Social Media Sentiment:__ Social sentiment for stocks on Reddit and Twitter.
    - `social_media_sentiment.csv`
- - __Senate Lobbying Activities:__ list of reported lobbying activities in the Senate and the House.
+ - __Senate Lobbying Activities:__ List of reported lobbying activities in the Senate and the House.
    - `senate_lobbying.csv`
  - __Finanicals as Reported:__ a company's financials as reported including income statements, cash fow, and balance sheets.
    - `balance_sheet.csv`, `cash_flow.csv`, `income_statement.csv`
 
 ### Issues and Limitations:
- - Timeouts/Rate Limit – 300 API Calls/minute
+ - Timeouts/Rate Limit:
+   - 60 finnhub API calls/minute for each client
+   - 300 google API Calls/minute
  - Our historical data is limited due to using a free version of finnhub
 
 
 ## Running the Application
 We produced two different jupyter notebooks:
-1. `final_project_group_one.ipynb`: this notebook will generate the data locally into CSV files. In input is a hardcoded list of stock tickers.
-2. `google_drive/project.ipynb`: this notebook will generate the data directly into our shared [Google Drive](https://drive.google.com/drive/folders/1hgWRHwlC9thoPKd7-dRqEHTPGYv3LtUk?usp=sharing) location. This version will allow the user to input a stock symbol or could run against a hardcoded list of stock tickers.
+1. `final_project_group_one.ipynb`: this notebook will generate the data locally into CSV files. The input is a hardcoded list of stock tickers that can be adjusted.
+2. `google_drive/project.ipynb`: this notebook will generate the data directly into our shared [Google Drive](https://drive.google.com/drive/folders/1hgWRHwlC9thoPKd7-dRqEHTPGYv3LtUk?usp=sharing) location. This version will allow the user to input a stock symbol or could run against all stock tickers from a specific market i.e. Nasdaq, NY stock exchange, ect.
 
 
 ### Software Pre-requisites:
