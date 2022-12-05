@@ -54,5 +54,8 @@ pip install finnhub-python
 ### Running instructions 
 - Open the `final_project_group_one.ipynb` jupyter notebook
 - Press `Run All` Button
-  - This will run the notebook using the hardcoded set of tickers defined in the last code section of the notebook.
+  - This will run the notebook using the hardcoded set of stock tickers defined in the last code section of the notebook.
 
+
+### Code Overview
+Our jupyter notebooks are designed to iterate over a collection of stock symbols and will populate each one our datasets with the most up to date financial information provided from Finnhub. Our datasets are designed to allow additional entries to be added to them while maintaining all historical data that already exists and not allow duplicate entries.
