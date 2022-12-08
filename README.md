@@ -46,16 +46,27 @@ We produced two different jupyter notebooks:
 
 
 ### Software Pre-requisites:
+Install the following dependencies in the python environment.
 ```
 pip install pandas
 pip install finnhub-python
 ```
 
-### Running instructions 
-- Open the `final_project_group_one.ipynb` jupyter notebook
-- Press `Run All` Button
-  - This will run the notebook using the hardcoded set of stock tickers defined in the last code section of the notebook.
+### Running with Visual Studio Code
+1. Install or enable the Python and Jupyter extenstions
+2. Open the `final_project_group_one.ipynb` jupyter notebook
+3. Press `Run All` Button
+
+### Running with jupyter notebook server
+1. Run the `jupyter notebook` command in terminal from `dsci-511-project` directory
+2. The notebook should open in your browser.
+3. From the browser run all cells
+
+> To run from server, jupyter must be installed: `pip install -U jupyter`
 
 
 ### Code Overview
 Our jupyter notebooks are designed to iterate over a collection of stock symbols and will populate each one our datasets with the most up to date financial information provided from Finnhub. Our datasets are designed to allow additional entries to be added to them while maintaining all historical data that already exists and not allow duplicate entries.
+
+### Defining Stock Symbols:
+The last section of the notebook contains a hardcoded set of stock tickers that determines which financial data is generated.
